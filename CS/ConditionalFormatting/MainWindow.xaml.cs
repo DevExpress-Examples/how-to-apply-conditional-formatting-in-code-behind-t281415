@@ -8,48 +8,39 @@ namespace ConditionalFormatting {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-            var salesVsTargetFormatCondition = new FormatCondition() {
-                Expression = "[SalesVsTarget] < 0.0m",
-                FieldName = "SalesVsTarget",
-                PredefinedFormatName = "RedText"
-            };
-            view.FormatConditions.Add(salesVsTargetFormatCondition);
-
-            var profitFormatCondition = new FormatCondition() {
-                Expression = "[Profit] < 0.0",
-                FieldName = "Profit",
-                Format = new Format() {
-                    Foreground = Brushes.Red
+            view.FormatConditions.AddRange(new List<FormatConditionBase> {
+                new FormatCondition() {
+                    Expression = "[SalesVsTarget] < 0.0m",
+                    FieldName = "SalesVsTarget",
+                    PredefinedFormatName = "RedText"
+                },
+                new FormatCondition() {
+                    Expression = "[Profit] < 0.0",
+                    FieldName = "Profit",
+                    Format = new Format() {
+                        Foreground = Brushes.Red
+                    }
+                },
+                new DataBarFormatCondition() {
+                    FieldName = "Sales",
+                    PredefinedFormatName = "RedGradientDataBar"
+                },
+                new TopBottomRuleFormatCondition() {
+                    Expression = "[Sales]",
+                    FieldName = null,
+                    PredefinedFormatName = "BoldText",
+                    Rule = TopBottomRule.TopPercent,
+                    Threshold = 10d
+                },
+                new DataBarFormatCondition() {
+                    FieldName = "Profit",
+                    PredefinedFormatName = "GreenGradientDataBar"
+                },
+                new IconSetFormatCondition() {
+                    FieldName = "MarketShare",
+                    PredefinedFormatName = "Quarters5IconSet"
                 }
-            };
-            view.FormatConditions.Add(profitFormatCondition);
-
-            var salesDataBar = new DataBarFormatCondition() {
-                FieldName = "Sales",
-                PredefinedFormatName = "RedGradientDataBar"
-            };
-            view.FormatConditions.Add(salesDataBar);
-
-            var topBottomRule = new TopBottomRuleFormatCondition() {
-                Expression = "[Sales]",
-                FieldName = null,
-                PredefinedFormatName = "BoldText",
-                Rule =TopBottomRule.TopPercent,
-                Threshold = 10d
-            };
-            view.FormatConditions.Add(topBottomRule);
-
-            var profitDataBar = new DataBarFormatCondition() {
-                FieldName = "Profit",
-                PredefinedFormatName = "GreenGradientDataBar"
-            };
-            view.FormatConditions.Add(profitDataBar);
-
-            var marketShareIcons = new IconSetFormatCondition() {
-                FieldName = "MarketShare",
-                PredefinedFormatName = "Quarters5IconSet"
-            };
-            view.FormatConditions.Add(marketShareIcons);
+            });
         }
     }
 }
