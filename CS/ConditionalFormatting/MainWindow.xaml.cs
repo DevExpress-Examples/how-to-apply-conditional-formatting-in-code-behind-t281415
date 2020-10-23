@@ -3,6 +3,7 @@ using DevExpress.Xpf.Grid;
 using DevExpress.Xpf.Core.ConditionalFormatting;
 using System.Windows;
 using System.Windows.Media;
+using System.Collections.Generic;
 
 namespace ConditionalFormatting {
     public partial class MainWindow : Window {
