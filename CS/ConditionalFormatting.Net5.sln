@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalFormatting", "ConditionalFormatting\ConditionalFormatting.csproj", "{7206F51E-A8C5-4010-961E-1F9963781CB1}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalFormatting", "ConditionalFormatting\ConditionalFormatting.Net5.csproj", "{7206F51E-A8C5-4010-961E-1F9963781CB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
