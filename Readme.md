@@ -3,16 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T281415)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+# WPF Data Grid - Apply Conditional Formatting in Code Behind
+
+This example demonstrates how to specify [conditional formatting](https://docs.devexpress.com/WPF/17130/controls-and-libraries/data-grid/conditional-formatting) rules in code behind.
+
+![image](https://user-images.githubusercontent.com/65009440/171875072-3a66fd25-2cbd-40e6-a4d3-186e0cd0b0fa.png)
+
 <!-- default file list -->
-*Files to look at*:
+## Files to look at
 
 * [MainWindow.xaml](./CS/ConditionalFormatting/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/ConditionalFormatting/MainWindow.xaml))
-* **[MainWindow.xaml.cs](./CS/ConditionalFormatting/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/ConditionalFormatting/MainWindow.xaml.vb))**
+* [MainWindow.xaml.cs](./CS/ConditionalFormatting/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/ConditionalFormatting/MainWindow.xaml.vb))
+
 <!-- default file list end -->
-# How to apply Conditional Formatting in code behind
 
-<p>This example demonstrates how to change Conditional Formatting rules in code behind</p>
+## Documentation
 
-<br/>
+* [Conditional Formatting](https://docs.devexpress.com/WPF/17130/controls-and-libraries/data-grid/conditional-formatting)
+* [Conditional Formats](https://docs.devexpress.com/WPF/114012/controls-and-libraries/data-grid/conditional-formatting/conditional-formats)
 
+## More Examples
 
+* [WPF Data Grid - Apply Conditional Formatting](https://github.com/DevExpress-Examples/how-to-apply-conditional-formatting-t135593)
+* [WPF Data Grid - Apply Conditional Formatting Rules Specified in a ViewModel](https://github.com/DevExpress-Examples/wpf-mvvm-how-to-bind-the-gridcontrol-to-conditional-formatting-rules-specified-in-viewmodel)
