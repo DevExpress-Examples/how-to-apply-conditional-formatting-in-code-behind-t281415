@@ -1,5 +1,4 @@
-﻿
-using DevExpress.Xpf.Grid;
+﻿using DevExpress.Xpf.Grid;
 using DevExpress.Xpf.Core.ConditionalFormatting;
 using System.Windows;
 using System.Windows.Media;
@@ -10,18 +9,6 @@ namespace ConditionalFormatting {
         public MainWindow() {
             InitializeComponent();
             view.FormatConditions.AddRange(new List<FormatConditionBase> {
-                new FormatCondition() {
-                    Expression = "[SalesVsTarget] < 0.0m",
-                    FieldName = "SalesVsTarget",
-                    PredefinedFormatName = "RedText"
-                },
-                new FormatCondition() {
-                    Expression = "[Profit] < 0.0",
-                    FieldName = "Profit",
-                    Format = new Format() {
-                        Foreground = Brushes.Red
-                    }
-                },
                 new DataBarFormatCondition() {
                     FieldName = "Sales",
                     PredefinedFormatName = "RedGradientDataBar"
@@ -31,11 +18,32 @@ namespace ConditionalFormatting {
                     FieldName = null,
                     PredefinedFormatName = "BoldText",
                     Rule = TopBottomRule.TopPercent,
-                    Threshold = 10d
+                    Threshold = 10
+                },
+                new FormatCondition() {
+                    Expression = "[SalesVsTarget] < 0.0m",
+                    FieldName = "SalesVsTarget",
+                    PredefinedFormatName = "RedText"
+                },
+                new FormatCondition() {
+                    Expression = "[SalesVsTarget] > 0.0m",
+                    FieldName = "SalesVsTarget",
+                    PredefinedFormatName = "GreenText"
+                },
+                new FormatCondition() {
+                    Expression = "[Profit] < 0.0",
+                    FieldName = "Profit",
+                    Format = new Format() {
+                        Foreground = Brushes.Red
+                    }
                 },
                 new DataBarFormatCondition() {
                     FieldName = "Profit",
                     PredefinedFormatName = "GreenGradientDataBar"
+                },
+                new IconSetFormatCondition() {
+                    FieldName = "CustomersSatisfaction",
+                    PredefinedFormatName = "Stars3IconSet"
                 },
                 new IconSetFormatCondition() {
                     FieldName = "MarketShare",

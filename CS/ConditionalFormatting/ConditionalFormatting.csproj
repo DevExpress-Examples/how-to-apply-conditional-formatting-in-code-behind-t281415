@@ -88,9 +88,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Data\ConditionalFormattingViewModel.cs" />
-    <Compile Include="Data\SaleOverviewData.cs" />
-    <Compile Include="Data\SaleOverviewDataGenerator.cs" />
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="SaleData.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
