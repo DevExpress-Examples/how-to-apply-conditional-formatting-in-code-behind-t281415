@@ -1,19 +1,23 @@
-﻿Imports System.ComponentModel.DataAnnotations
-Imports System.Linq
+Imports System.ComponentModel.DataAnnotations
 
 Namespace ConditionalFormatting
-	Public Class ConditionalFormattingViewModel
-		Public Sub New()
-			Items = SaleOverviewDataGenerator.GenerateSales()
-		End Sub
-		Private privateItems As SaleOverviewData()
-		Public Property Items() As SaleOverviewData()
-			Get
-				Return privateItems
-			End Get
-			Private Set(ByVal value As SaleOverviewData())
-				privateItems = value
-			End Set
-		End Property
-	End Class
+
+    Public Class ConditionalFormattingViewModel
+
+        Private _Items As ConditionalFormatting.SaleOverviewData()
+
+        Public Sub New()
+            Items = GenerateSales()
+        End Sub
+
+        Public Property Items As SaleOverviewData()
+            Get
+                Return _Items
+            End Get
+
+            Private Set(ByVal value As SaleOverviewData())
+                _Items = value
+            End Set
+        End Property
+    End Class
 End Namespace
