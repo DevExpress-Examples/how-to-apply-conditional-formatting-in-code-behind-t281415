@@ -28,7 +28,7 @@ This example demonstrates how to specify [conditional formatting](https://docs.d
 * [WPF Data Grid - Apply Conditional Formatting](https://github.com/DevExpress-Examples/how-to-apply-conditional-formatting-t135593)
 * [WPF Data Grid - Apply Conditional Formatting Rules Specified in a ViewModel](https://github.com/DevExpress-Examples/wpf-mvvm-how-to-bind-the-gridcontrol-to-conditional-formatting-rules-specified-in-viewmodel)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-apply-conditional-formatting-in-code-behind-t281415&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-apply-conditional-formatting-in-code-behind-t281415&~~~was_helpful=no)
 
